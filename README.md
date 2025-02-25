@@ -2,9 +2,9 @@
 
 [App Inventor 2 LLMAI2Ext 自研拓展：接入DeepSeek、Kimi、通义千问...等国内大模型](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html)
 
-* [<img src="LLMAI2Ext/deepseek.png" style="width:16px;margin:-4px 0 0 5px"> DeepSeek](#DeepSeek)
-* [<img src="LLMAI2Ext/kimi.png" style="width:16px;margin:-4px 0 0 5px"> Kimi](#Kimi)
-* [<img src="LLMAI2Ext/qwen.png" style="width:16px;margin:-4px 0 0 5px"> 阿里通义千问](#Qwen)
+* [<img src="LLMAI2Ext/deepseek.png" style="width:16px;margin:-4px 0 0 5px"> DeepSeek](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html#DeepSeek)
+* [<img src="LLMAI2Ext/kimi.png" style="width:16px;margin:-4px 0 0 5px"> Kimi](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html#Kimi)
+* [<img src="LLMAI2Ext/qwen.png" style="width:16px;margin:-4px 0 0 5px"> 阿里通义千问](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html#Qwen)
 
 ## AppInventor2中文网开发国内大模型拓展的初衷
 

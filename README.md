@@ -1,19 +1,14 @@
 ---
 title: App Inventor 2 LLMAI2Ext 自研拓展：接入DeepSeek、Kimi、通义千问...等国内大模型
-layout: documentation
-description: App Inventor 2 LLMAI2Ext 自研拓展：接入DeepSeek、Kimi、通义千问...等国内大模型
+link: [官网链接](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html)
 ---
 
-* TOC
-{:toc}
-
-[官网链接](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html)
 
 * [<img src="LLMAI2Ext/deepseek.png" style="width:16px;margin:-4px 0 0 5px"> DeepSeek](#DeepSeek)
 * [<img src="LLMAI2Ext/kimi.png" style="width:16px;margin:-4px 0 0 5px"> Kimi](#Kimi)
 * [<img src="LLMAI2Ext/qwen.png" style="width:16px;margin:-4px 0 0 5px"> 阿里通义千问](#Qwen)
 
-## 中文网开发国内大模型拓展的初衷
+## AppInventor2中文网开发国内大模型拓展的初衷
 
 App Inventor 2 原生的ChatGPT组件由于是国外的，使用起来不太便捷，且各种限制。
 
@@ -30,7 +25,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 ## 拓展下载，免费开放
 * .aix 拓展下载：
 
-[cn.fun123.LLMAI2Ext.aix - v1.0](https://www.fun123.cn/reference/extensions/LLMAI2Ext/cn.fun123.LLMAI2Ext.aix?t={{ "now" | date: "%Y%m%d" }})
+[cn.fun123.LLMAI2Ext.aix - v1.0](https://www.fun123.cn/reference/extensions/LLMAI2Ext/cn.fun123.LLMAI2Ext.aix)
 
 注：所有大模型拓展共一个.aix拓展文件，里面有多个拓展组件，导入.aix效果参考如下：
 
@@ -59,7 +54,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 ![kimi](LLMAI2Ext/kimi_text.png)
 
 
-## <img src="LLMAI2Ext/deepseek.png" style="width:16px;margin:-4px 0 0 5px">  DeepSeek  {#DeepSeek}
+## <img src="LLMAI2Ext/deepseek.png" style="width:16px;margin:-4px 0 0 5px">  DeepSeek
 
 使用AppInventor2接入DeepSeek大模型。<a href="https://platform.deepseek.com/api_keys" target="_blank">从深度求索获取 API Key >></a>
 
@@ -75,9 +70,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 
 ![llm](LLMAI2Ext/llm_deepseek.gif)
 
-### 属性  {#DeepSeek-Properties}
-
-{:.properties}
+### 属性
 
 {:id="DeepSeek.APIKey" .text} *APIKey*
 : 模型的Api Key。
@@ -93,9 +86,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 流式输出，即生成内容时边计算边返回，减少等待时间，提高响应速度，适用于聊天、代码补全等场景。
 不开启，则是最终仅一次返回全部内容。
 
-### 事件  {#DeepSeek-Events}
-
-{:.events}
+### 事件
 
 {:id="DeepSeek.GotStream"} GotStream(*part*{:.text},*finished*{:.boolean})
 : 流式输出，每当有内容返回时都会触发该事件。part 为当前增量的部分内容，finished 标识输出是否已结束。
@@ -103,22 +94,18 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 {:id="DeepSeek.GotText"} GotText(*text*{:.text})
 : 非流式输出完成时触发该事件。text 为完整输出内容。
 
-### 方法  {#DeepSeek-Methods}
-
-{:.methods}
+### 方法
 
 {:id="DeepSeek.Chat" class="method"} <i/> Chat(*content*{:.text})
 : 开始与 DeepSeek 大模型进行对话。
 
 
 
-## <img src="LLMAI2Ext/kimi.png" style="width:16px;margin:-4px 0 0 5px">  Kimi  {#Kimi}
+## <img src="LLMAI2Ext/kimi.png" style="width:16px;margin:-4px 0 0 5px">  Kimi
 
 使用AppInventor2接入Kimi大模型。<a href="https://platform.moonshot.cn/console/api-keys" target="_blank">从 Moonshot 获取 API Key >></a>
 
-### 属性  {#Kimi-Properties}
-
-{:.properties}
+### 属性
 
 {:id="Kimi.APIKey" .text} *APIKey*
 : 模型的Api Key。
@@ -131,9 +118,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 流式输出，即生成内容时边计算边返回，减少等待时间，提高响应速度，适用于聊天、代码补全等场景。
 不开启，则是最终仅一次返回全部内容。
 
-### 事件  {#Kimi-Events}
-
-{:.events}
+### 事件
 
 {:id="Kimi.GotStream"} GotStream(*part*{:.text},*finished*{:.boolean})
 : 流式输出，每当有内容返回时都会触发该事件。part 为当前增量的部分内容，finished 标识输出是否已结束。
@@ -141,24 +126,20 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 {:id="Kimi.GotText"} GotText(*text*{:.text})
 : 非流式输出完成时触发该事件。text 为完整输出内容。
 
-### 方法  {#Kimi-Methods}
-
-{:.methods}
+### 方法
 
 {:id="Kimi.Chat" class="method"} <i/> Chat(*content*{:.text})
 : 开始与 Kimi 大模型进行对话。
 
 
 
-## <img src="LLMAI2Ext/qwen.png" style="width:16px;margin:-4px 0 0 5px"> 阿里通义千问  {#Qwen}
+## <img src="LLMAI2Ext/qwen.png" style="width:16px;margin:-4px 0 0 5px"> 阿里通义千问
 
 使用AppInventor2接入阿里通义千问大模型。<a href="https://dashscope.console.aliyun.com/api-key_management" target="_blank">从阿里云获取 API Key >></a>
 
 ![llm](LLMAI2Ext/llm_qwen.gif)
 
-### 属性  {#Qwen-Properties}
-
-{:.properties}
+### 属性
 
 {:id="Qwen.APIKey" .text} *APIKey*
 : 模型的Api Key。
@@ -171,9 +152,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 流式输出，即生成内容时边计算边返回，减少等待时间，提高响应速度，适用于聊天、代码补全等场景。
 不开启，则是最终仅一次返回全部内容。
 
-### 事件  {#Qwen-Events}
-
-{:.events}
+### 事件
 
 {:id="Qwen.GotStream"} GotStream(*part*{:.text},*finished*{:.boolean})
 : 流式输出，每当有内容返回时都会触发该事件。part 为当前增量的部分内容，finished 标识输出是否已结束。
@@ -181,10 +160,7 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 {:id="Qwen.GotText"} GotText(*text*{:.text})
 : 非流式输出完成时触发该事件。text 为完整输出内容。
 
-### 方法  {#Qwen-Methods}
-
-{:.methods}
+### 方法
 
 {:id="Qwen.Chat" class="method"} <i/> Chat(*content*{:.text})
 : 开始与千问大模型进行对话。
-

@@ -1,8 +1,6 @@
----
-title: App Inventor 2 LLMAI2Ext 自研拓展：接入DeepSeek、Kimi、通义千问...等国内大模型
-link: [官网链接](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html)
----
+## 官网原文链接
 
+[App Inventor 2 LLMAI2Ext 自研拓展：接入DeepSeek、Kimi、通义千问...等国内大模型](https://www.fun123.cn/reference/extensions/LLMAI2Ext.html)
 
 * [<img src="LLMAI2Ext/deepseek.png" style="width:16px;margin:-4px 0 0 5px"> DeepSeek](#DeepSeek)
 * [<img src="LLMAI2Ext/kimi.png" style="width:16px;margin:-4px 0 0 5px"> Kimi](#Kimi)

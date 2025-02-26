@@ -56,13 +56,13 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 
 使用AppInventor2接入DeepSeek大模型。<a href="https://platform.deepseek.com/api_keys" target="_blank">从深度求索获取 API Key >></a>
 
-由于DeepSeek官方API已停止开放，这里我们可以对接其他厂商部署的DeepSeek服务，比如百度、阿里都有部署，百度服务用起来过于复杂，这里选择阿里的DeepSeek服务进行测试验证：
+当然也可以对接其他厂商部署的DeepSeek服务，比如百度、阿里都有部署，这里选择阿里的DeepSeek服务进行测试验证：
 
 `BaseURL` 由官方的改为：`https://dashscope.aliyuncs.com/compatible-mode/v1`
 
 `APIKey` 用阿里云的。
 
-`ModelName` 指定：deepseek-v3 或 deepseek-r1
+`ModelName` 指定：deepseek-v3 或 deepseek-r1    （注意：第三方的模型名称和官方的不太一样）
 
 参考测试结果如下：
 
@@ -74,10 +74,10 @@ v1.0 版本现已上线，暂时支持3个大模型的接入（DeepSeek、Kimi�
 : 模型的Api Key。
 
 {:id="DeepSeek.BaseURL" .text} *BaseURL*
-: DeepSeek 基础 URL，默认是官方地址，但由于官方API暂未开放充值，可考虑使用第三方DeepSeek服务地址。
+: DeepSeek 基础 URL，默认是官方地址，可修改接入第三方DeepSeek服务地址。
 
 {:id="DeepSeek.ModelName" .text} *ModelName*
-: 模型名称。
+: 模型名称。官方的DeepSeek-V3模型填：deepseek-chat  或  DeepSeek-R1推理模型填：deepseek-reasoner。 （注意：第三方的模型名称和官方的不太一样）
 
 {:id="DeepSeek.StreamMode" .boolean} *StreamMode*
 : 流式输出模式是否开启，默认'真'。
